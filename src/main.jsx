@@ -7,11 +7,14 @@ import Home from "./components/Home";
 import Statistics from "./Statistics";
 import Header from "./components/Header";
 import Blogs from "./components/Blogs";
+import JobCategoryList from "./components/JobCategoryList";
+import ErrorPage from "./ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -24,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/job",
+        element: <JobCategoryList />,
       },
     ],
   },

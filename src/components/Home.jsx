@@ -22,17 +22,19 @@ const Home = () => {
           </p>
         </div>
         <div className=" flex-col items-center md:flex-row">
-          <Link to="/books" className="btn md:w-auto md:mr-4">
+          <Link
+            to="/books"
+            className="btn border-transparent md:w-auto md:mr-4"
+          >
             <div className="inline-flex items-center  w-full h-full">
               <p className="mr-3">Get Started</p>
             </div>
           </Link>
         </div>
       </div>
-      {/* Lottie Animation */}
+
       <div className="relative lg:w-1/2 ">
         <div className="w-full lg:w-4/5 lg:ml-auto h-56  sm:h-96">
-          {/* <img src="../assets/All Images/man.png" alt="" srcset="" /> */}
           <img src={man} alt="" />
         </div>
       </div>
