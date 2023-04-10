@@ -11,9 +11,8 @@ const Header = () => {
   return (
     <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div className="relative flex items-center justify-between">
-        {/* Logo Section */}
         <Link to="/" className="inline-flex items-center">
-          <span className="ml-2  text-2xl font-bold tracking-wide text-gray-800">
+          <span className="ml-2  text-2xl font-bold tracking-wide text-gray-800 uppercase">
             Linke <span className="inline-block text-blue-400">Tech</span>
           </span>
         </Link>
@@ -55,7 +54,7 @@ const Header = () => {
           <li>
             <Link to="/books" className="btn border-transparent">
               <div>
-                <p>Get Started</p>
+                <p>Start Applying</p>
               </div>
             </Link>
           </li>
@@ -78,7 +77,8 @@ const Header = () => {
                   <div>
                     <Link to="/" className="inline-flex items-center">
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                        nextPage
+                        Linke{" "}
+                        <span className="inline-block text-blue-400">Tech</span>
                       </span>
                     </Link>
                   </div>
@@ -128,7 +128,7 @@ const Header = () => {
                     <li>
                       <Link to="/books" className="btn border-transparent">
                         <div>
-                          <p>Get Started</p>
+                          <p>Start Applying</p>
                         </div>
                       </Link>
                     </li>

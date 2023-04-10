@@ -45,7 +45,7 @@ const Blogs = () => {
           <div className="space-y-8">
             <div>
               <p className="mb-4 text-xl font-medium">
-                Books are a uniquely portable magic.
+                When should you use context API?
               </p>
               <p className="text-gray-700">
                 Space, the final frontier. These are the voyages of the Starship
@@ -58,9 +58,7 @@ const Blogs = () => {
               </p>
             </div>
             <div>
-              <p className="mb-4 text-xl font-medium">
-                The first mate and his Skipper too will do?
-              </p>
+              <p className="mb-4 text-xl font-medium">What is a custom hook?</p>
               <p className="text-gray-700">
                 Well, the way they make shows is, they make one show. That
                 show's called a pilot.
@@ -73,22 +71,10 @@ const Blogs = () => {
                 ones that became nothing.
               </p>
             </div>
-            <div>
-              <p className="mb-4 text-xl font-medium">
-                Is the Space Pope reptilian!?
-              </p>
-              <p className="text-gray-700">
-                A flower in my garden, a mystery in my panties. Heart attack
-                never stopped old Big Bear. I didn't even know we were calling
-                him Big Bear.
-              </p>
-            </div>
           </div>
           <div className="space-y-8">
             <div>
-              <p className="mb-4 text-xl font-medium">
-                How much money you got on you?
-              </p>
+              <p className="mb-4 text-xl font-medium">What is useRef?</p>
               <p className="text-gray-700">
                 The first mate and his Skipper too will do their very best to
                 make the others comfortable in their tropic island nest.
@@ -101,9 +87,7 @@ const Blogs = () => {
               </p>
             </div>
             <div>
-              <p className="mb-4 text-xl font-medium">
-                Galaxies Orion's sword globular star cluster?
-              </p>
+              <p className="mb-4 text-xl font-medium">What is useMemo?</p>
               <p className="text-gray-700">
                 A business big enough that it could be listed on the NASDAQ goes
                 belly up. Disappears!
@@ -111,17 +95,6 @@ const Blogs = () => {
                 <br />
                 It ceases to exist without me. No, you clearly don't know who
                 you're talking to, so let me clue you in.
-              </p>
-            </div>
-            <div>
-              <p className="mb-4 text-xl font-medium">
-                When has justice ever been as simple as a rule book?
-              </p>
-              <p className="text-gray-700">
-                This is not about revenge. This is about justice. A lot of
-                things can change in twelve years, Admiral. Well, that's
-                certainly good to know. About four years. I got tired of hearing
-                how young I looked.
               </p>
             </div>
           </div>

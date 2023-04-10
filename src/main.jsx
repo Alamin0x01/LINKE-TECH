@@ -8,7 +8,7 @@ import Statistics from "./Statistics";
 import Header from "./components/Header";
 import Blogs from "./components/Blogs";
 import JobCategoryList from "./components/JobCategoryList";
-import ErrorPage from "./ErrorPage";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -27,10 +27,6 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
-      },
-      {
-        path: "/job",
-        element: <JobCategoryList />,
       },
     ],
   },
