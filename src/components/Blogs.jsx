@@ -29,15 +29,10 @@ const Blogs = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative">A</span>
+              <span className="relative">Programming</span>
             </span>{" "}
-            reader lives a thousand lives before he dies
+            Hero- Question Answers
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
-            Books are a uniquely portable magic. Books serve to show a man that
-            those original thoughts of his aren’t very new after all. The man
-            who does not read good books is no better than the man who can’t.
-          </p>
         </div>
       </div>
       <div className="max-w-screen-xl sm:mx-auto">
@@ -48,27 +43,35 @@ const Blogs = () => {
                 When should you use context API?
               </p>
               <p className="text-gray-700">
-                Space, the final frontier. These are the voyages of the Starship
-                Enterprise. Its five-year mission: to explore strange new
-                worlds.
+                Context API is a fairly new concept in the world of React. Its
+                main purpose is to share data between components without using
+                props or actions. It is designed to share data that can be
+                considered global for a tree of React components, such as theme,
+                or preferred language.
                 <br />
+                <br /> Context can significantly reduce the complexity of state
+                management in your application. Many say exploration is part of
+                our destiny, but it’s actually our duty to future generations.{" "}
                 <br />
-                Many say exploration is part of our destiny, but it’s actually
-                our duty to future generations.
+                Context API when you have global data that needs to be accessed
+                by multiple components at different levels in the component
+                tree, when you want to avoid prop drilling, and when you want to
+                keep your code more readable and maintainable.
               </p>
             </div>
             <div>
               <p className="mb-4 text-xl font-medium">What is a custom hook?</p>
               <p className="text-gray-700">
-                Well, the way they make shows is, they make one show. That
-                show's called a pilot.
+                React Hooks unlock a whole new way of writing functional
+                components, allowing us to add features available for class
+                components, like stateful logic.
                 <br />
                 <br />
-                Then they show that show to the people who make shows, and on
-                the strength of that one show they decide if they're going to
-                make more shows. Some pilots get picked and become television
-                programs.Some don't, become nothing. She starred in one of the
-                ones that became nothing.
+                Custom hooks are useful when you find yourself duplicating the
+                same logic across multiple components, or when you have complex
+                logic that needs to be reused across multiple components. By
+                encapsulating this logic into a custom hook, you can make your
+                code more modular and easier to maintain.
               </p>
             </div>
           </div>
@@ -76,25 +79,31 @@ const Blogs = () => {
             <div>
               <p className="mb-4 text-xl font-medium">What is useRef?</p>
               <p className="text-gray-700">
-                The first mate and his Skipper too will do their very best to
-                make the others comfortable in their tropic island nest.
+                The useRef hook returns a mutable object which doesn’t re-render
+                the component when it’s changed. Think it like useState, but
+                unlike useState, doesn’t trigger re-render of the component.
                 <br />
                 <br />
-                Michael Knight a young loner on a crusade to champion the cause
-                of the innocent. The helpless. The powerless in a world of
-                criminals who operate above the law. Here he comes Here comes
-                Speed Racer. He's a demon on wheels.
+                The object that useRef returns have a current property that can
+                hold any modifiable value. There are a couple of specific uses
+                cases for useRef and refs that I'd like to call out. Modifying a
+                child DOM node outside of the typical React data flow. Treating
+                the mutable object returned by useRef similar to an instance
+                property.
               </p>
             </div>
             <div>
               <p className="mb-4 text-xl font-medium">What is useMemo?</p>
               <p className="text-gray-700">
-                A business big enough that it could be listed on the NASDAQ goes
-                belly up. Disappears!
+                useMemo is a React Hook that lets you cache the result of a
+                calculation between re-renders.
                 <br />
                 <br />
-                It ceases to exist without me. No, you clearly don't know who
-                you're talking to, so let me clue you in.
+                The useMemo Hook can be used to keep expensive, resource
+                intensive functions from needlessly running. It is very useful
+                in optimizing the performance of a React component by
+                eliminating repeating heavy computations. useMemo is a react
+                hook to memoize a function within a functional component.
               </p>
             </div>
           </div>

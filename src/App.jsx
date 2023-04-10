@@ -12,8 +12,8 @@ const App = () => {
       <div className="min-h-[calc(100vh-136px)]">
         <Outlet />
       </div>
-      <JobCategoryList />
-      <FeaturedJobs />
+      {/* <JobCategoryList />
+      <FeaturedJobs /> */}
       <Footer />
     </div>
   );
