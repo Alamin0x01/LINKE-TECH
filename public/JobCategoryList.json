@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "categoryLogo": "./Logo/chip 1.png",
+    "categoryLogo": "https://i.ibb.co/1nTNgcK/chip-1.png",
     "categoryName": "Software Development",
     "jobsAvailable": 25
   },
   {
     "id": 2,
-    "categoryLogo": "./Logo/business 1.png",
+    "categoryLogo": "https://i.ibb.co/7t77q78/business-1.png",
     "categoryName": "Marketing",
     "jobsAvailable": 18
   },
   {
     "id": 3,
-    "categoryLogo": "./Logo/social-media 1.png",
+    "categoryLogo": "https://i.ibb.co/WcK9HT9/social-media-1.png",
     "categoryName": "Design",
     "jobsAvailable": 12
   },
   {
     "id": 4,
-    "categoryLogo": "./Logo/accounts 1.png",
+    "categoryLogo": "https://i.ibb.co/Q8GhGNM/accounts-1.png",
     "categoryName": "Data Analysis",
     "jobsAvailable": 10
   }
