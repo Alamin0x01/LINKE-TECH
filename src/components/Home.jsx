@@ -52,7 +52,7 @@ const Home = () => {
           <div className="my-container  grid md:grid-cols-1 lg:grid-cols-4 gap-4">
             <div className="card w-22 glass bg-indigo-100 ">
               <figure>
-                <img src="{https://i.ibb.co/xF1gW72/chip-1.png}" />
+                <img src="https://i.ibb.co/xF1gW72/chip-1.png" />
               </figure>
 
               <div className="card-body">
@@ -90,12 +90,66 @@ const Home = () => {
           </div>
           <div className="flex flex-col items-center">
             <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Job Category List
+              Featured Jobs
             </h1>
             <p>
               Explore thousands of job opportunities with all the information
               you need. Its your future
             </p>
+          </div>
+          <div className="my-container grid md:grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="card card-compact w-50% bg-base-100 shadow-xl ">
+              <figure>
+                <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Senior Product Designer</h2>
+                <p>Google LLC</p>
+                <p>Dhaka, Bangladesh</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">View Details</button>
+                </div>
+              </div>
+            </div>
+            <div className="card card-compact w-50% bg-base-100 shadow-xl ">
+              <figure>
+                <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Software Engineer</h2>
+                <p>Netflix</p>
+                <p>Dhaka, Bangladesh</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">View Details</button>
+                </div>
+              </div>
+            </div>
+            <div className="card card-compact w-50% bg-base-100 shadow-xl ">
+              <figure>
+                <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Senior Product Designer</h2>
+                <p>Netflix</p>
+                <p>Dhaka, Bangladesh</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">View Details</button>
+                </div>
+              </div>
+            </div>
+            <div className="card card-compact w-50% bg-base-100 shadow-xl ">
+              <figure>
+                <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Software Engineer</h2>
+                <p>Google LLC</p>
+                <p>Dhaka, Bangladesh</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">View Details</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       ))}

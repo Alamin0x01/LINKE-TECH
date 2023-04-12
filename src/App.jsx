@@ -9,7 +9,6 @@ const App = () => {
       <div className="min-h-[calc(100vh-136px)]">
         <Outlet />
       </div>
-
       <Footer />
     </div>
   );

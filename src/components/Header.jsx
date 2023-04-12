@@ -37,7 +37,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to="/books"
+              to="/appliedJobs"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Applied Jobs
@@ -52,7 +52,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <Link to="/books" className="btn border-transparent">
+            <Link to="/StartApplying" className="btn border-transparent">
               <div>
                 <p>Start Applying</p>
               </div>
@@ -111,7 +111,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to="/books"
+                        to="/appliedJobs"
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                       >
                         Applied Jobs
@@ -126,7 +126,10 @@ const Header = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/books" className="btn border-transparent">
+                      <Link
+                        to="/appliedJobs"
+                        className="btn border-transparent"
+                      >
                         <div>
                           <p>Start Applying</p>
                         </div>

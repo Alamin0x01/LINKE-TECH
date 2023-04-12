@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Blogs from "./components/Blogs";
 import ErrorPage from "./components/ErrorPage";
 import Statistics from "./components/Statistics";
-import JobCategoryList from "./components/JobCategoryList";
+import AppliedJobs from "./components/AppliedJobs";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +34,8 @@ const router = createBrowserRouter([
         element: <Statistics />,
       },
       {
-        path: "/sss",
-        element: <JobCategoryList />,
+        path: "/appliedJobs",
+        element: <AppliedJobs />,
       },
     ],
   },
