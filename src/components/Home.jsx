@@ -1,10 +1,11 @@
 import React from "react";
-
 import man from "../assets/All Images/man.png";
-import { Link } from "react-router-dom";
-// import JobCategoryList from "./JobCategoryList";
+import { Link, useLoaderData } from "react-router-dom";
 
 const Home = () => {
+  const jobCategoryList = useLoaderData();
+  // console.log(jobCategoryList);
+
   return (
     <div className="my-container">
       <div className="flex flex-col items-center justify-between lg:flex-row">
@@ -37,6 +38,67 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {jobCategoryList.map((list) => (
+        <div className="my-container">
+          <div className="flex flex-col items-center">
+            <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Job Category List
+            </h1>
+            <p>
+              Explore thousands of job opportunities with all the information
+              you need. Its your future
+            </p>
+          </div>
+          <div className="my-container  grid md:grid-cols-1 lg:grid-cols-4 gap-4">
+            <div className="card w-22 glass bg-indigo-100 ">
+              <figure>
+                <img src="{https://i.ibb.co/xF1gW72/chip-1.png}" />
+              </figure>
+
+              <div className="card-body">
+                <h2 className="card-title">{list.categoryName}</h2>
+                <p>{list.jobsAvailable} Jobs Available</p>
+              </div>
+            </div>
+            <div className="card w-22 glass bg-indigo-100">
+              <figure>
+                <img src="https://i.ibb.co/xF1gW72/chip-1.png" alt="car!" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{list.categoryName}</h2>
+                <p>{list.jobsAvailable} Jobs Available</p>
+              </div>
+            </div>
+            <div className="card w-22 glass bg-indigo-100">
+              <figure>
+                <img src="https://i.ibb.co/xF1gW72/chip-1.png" alt="car!" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{list.categoryName}</h2>
+                <p>{list.jobsAvailable} Jobs Available</p>
+              </div>
+            </div>
+            <div className="card w-22 glass bg-indigo-100">
+              <figure>
+                <img src="https://i.ibb.co/xF1gW72/chip-1.png" alt="car!" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">{list.categoryName}</h2>
+                <p>{list.jobsAvailable} Jobs Available</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center">
+            <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Job Category List
+            </h1>
+            <p>
+              Explore thousands of job opportunities with all the information
+              you need. Its your future
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
