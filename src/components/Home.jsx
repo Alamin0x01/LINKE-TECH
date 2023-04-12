@@ -62,7 +62,7 @@ const Home = () => {
             </div>
             <div className="card w-22 glass bg-indigo-100">
               <figure>
-                <img src="https://i.ibb.co/xF1gW72/chip-1.png" alt="car!" />
+                <img src="https://i.ibb.co/CwPB3m7/accounts-1.png" alt="car!" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{list.categoryName}</h2>
@@ -80,7 +80,7 @@ const Home = () => {
             </div>
             <div className="card w-22 glass bg-indigo-100">
               <figure>
-                <img src="https://i.ibb.co/xF1gW72/chip-1.png" alt="car!" />
+                <img src="https://i.ibb.co/WV9NyNR/business-1.png" alt="car!" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{list.categoryName}</h2>
