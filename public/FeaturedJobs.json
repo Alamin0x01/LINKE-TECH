@@ -7,7 +7,7 @@
     "remoteOrOnsite": "Remote",
     "location": "Anywhere",
     "fulltimeOrParttime": "Fulltime",
-    "salary": "Competitive",
+    "salary": "$100,000 - $120,000",
     "jobDescription": "We are looking for a talented software engineer to join our team and help us build amazing products.",
     "jobResponsibility": "Develop, test, and deploy high-quality software products. Collaborate with cross-functional teams to design, develop, and ship new features. Write clean, efficient, and maintainable code. Continuously improve software engineering practices and processes.",
     "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
@@ -37,22 +37,23 @@
   },
   {
     "id": 3,
-    "companyLogo": "./Logo/tesla-9 1.png",
-    "jobTitle": "Tesla",
-    "companyName": "Example Company 3",
+    "companyLogo": "./Logo/netflix-4 1.png",
+    "jobTitle": "Product Manager",
+    "companyName": "Netflix",
     "remoteOrOnsite": "Remote",
-    "location": "Anywhere",
+    "location": "New York, NY",
     "fulltimeOrParttime": "Fulltime",
-    "salary": "$70,000 - $90,000",
-    "jobDescription": "We are looking for a talented UX Designer to help us create beautiful and intuitive user experiences.",
-    "jobResponsibility": "Collaborate with cross-functional teams to design and prototype user interfaces for web and mobile applications. Conduct user research and usability testing to inform design decisions. Iterate on designs based on feedback from stakeholders and users. Ensure designs are accessible and meet design system guidelines.",
-    "educationalRequirements": "Bachelor's degree in Design or related field.",
-    "experiences": "3+ years of experience in UX design.",
+    "salary": "$90,000 - $100,000",
+    "jobDescription": "We are seeking a highly motivated Marketing Manager to join our team and help drive our marketing efforts.",
+    "jobResponsibility": "Develop and execute marketing strategies and campaigns. Manage and optimize online and offline marketing channels. Collaborate with cross-functional teams to develop messaging and creative assets. Analyze and report on marketing performance metrics.",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field.",
+    "experiences": "5+ years of experience in marketing.",
     "contactInformation": {
-      "phone": "555-9012",
-      "email": "jobs@examplecompany3.com"
+      "phone": "555-5678",
+      "email": "jobs@examplecompany2.com"
     }
   },
+
   {
     "id": 4,
     "companyLogo": "./Logo/google-1-1 1.png",
@@ -71,22 +72,23 @@
       "Email": "jobs@examplecompany4.com"
     }
   },
+
   {
     "Id": 5,
-    "CompanyLogo": "./Logo/netflix-4 1.png",
-    "JobTitle": "Graphic Designer",
-    "CompanyName": "Netflix",
-    "RemoteOrOnsite": "Onsite",
-    "Location": "Chicago, IL",
-    "FulltimeOrParttime": "Part-time",
-    "Salary": "$25 - $35 per hour",
-    "JobDescription": "We are seeking a creative and detail-oriented Graphic Designer to join our team.",
-    "JobResponsibility": "Design and produce high-quality visual assets for marketing and branding campaigns. Collaborate with cross-functional teams to develop visual concepts and assets for web and print. Manage and maintain design assets and files.",
-    "EducationalRequirements": "Bachelor's degree in Graphic Design or related field.",
-    "Experiences": "2+ years of experience in graphic design.",
+    "CompanyLogo": "./Logo/tesla-9 1.png",
+    "JobTitle": "Product Manager",
+    "CompanyName": "Tesla",
+    "RemoteOrOnsite": "Remote",
+    "Location": "Anywhere",
+    "FulltimeOrParttime": "Fulltime",
+    "Salary": "$100,000 - $120,000",
+    "JobDescription": "We are looking for an experienced Product Manager to help us build amazing products.",
+    "JobResponsibility": "Collaborate with cross-functional teams to develop product roadmaps and define product requirements. Manage product lifecycle from ideation to launch. Conduct market research and analysis to identify product opportunities and trends. Monitor and analyze product performance metrics and use data to inform product decisions.",
+    "EducationalRequirements": "Bachelor's degree in Business, Engineering, Computer Science, or related field.",
+    "Experiences": "5+ years of experience in product management.",
     "ContactInformation": {
-      "Phone": "555-7890",
-      "Email": "jobs@examplecompany5.com"
+      "Phone": "555-2345",
+      "Email": "jobs@examplecompany6.com"
     }
   },
   {

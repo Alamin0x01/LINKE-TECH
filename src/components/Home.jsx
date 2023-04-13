@@ -2,16 +2,25 @@ import React, { useEffect, useState } from "react";
 import man from "../assets/All Images/man.png";
 import { Link } from "react-router-dom";
 import JobCategoryLists from "./JobCategoryLists";
+import FeaturedJobs from "./FeaturedJobs";
 const Home = () => {
   const [JobCategoryList, setJobCategoryList] = useState([]);
-  // const [jobs, setJobs] = useState([]);
-  // const [seeAllJobs, setSeeAllJobs] = useState(false);
+  const [jobs, setJobs] = useState([]);
+  const [seeAllJobs, setSeeAllJobs] = useState(false);
   useEffect(() => {
     fetch("/JobCategoryList.json")
       .then((res) => res.json())
       .then((data) => setJobCategoryList(data));
-    console.log(setJobCategoryList);
   }, []);
+  useEffect(() => {
+    fetch("/FeaturedJobs.json")
+      .then((res) => res.json())
+      .then((data) => setJobs(data));
+  }, []);
+  const handleSellAllJob = () => {
+    setSeeAllJobs(true);
+  };
+  const displayJobs = seeAllJobs ? jobs : jobs.slice(0, 4);
   return (
     <div className="my-container">
       <div className="flex flex-col items-center justify-between  lg:flex-row">
@@ -61,7 +70,7 @@ const Home = () => {
 
       {/* Featured Job lists */}
 
-      <div className="flex flex-col items-center">
+      <div className=" text-center flex flex-col items-center">
         <h1 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Featured Jobs
         </h1>
@@ -71,59 +80,18 @@ const Home = () => {
         </p>
       </div>
       <div className="my-container grid md:grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="card card-compact w-50% bg-base-100 shadow-xl ">
-          <figure>
-            <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Senior Product Designer</h2>
-            <p>Google LLC</p>
-            <p>Dhaka, Bangladesh</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-compact w-50% bg-base-100 shadow-xl ">
-          <figure>
-            <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Software Engineer</h2>
-            <p>Netflix</p>
-            <p>Dhaka, Bangladesh</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-compact w-50% bg-base-100 shadow-xl ">
-          <figure>
-            <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Senior Product Designer</h2>
-            <p>Netflix</p>
-            <p>Dhaka, Bangladesh</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">View Details</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-compact w-50% bg-base-100 shadow-xl ">
-          <figure>
-            <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
-          </figure>
-          <div className="card-body">
-            <h2 className="card-title">Software Engineer</h2>
-            <p>Google LLC</p>
-            <p>Dhaka, Bangladesh</p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">View Details</button>
-            </div>
-          </div>
-        </div>
+        {displayJobs.map((job) => (
+          <FeaturedJobs key={job.id} job={job} />
+        ))}
       </div>
+      {!seeAllJobs && (
+        <button
+          onClick={handleSellAllJob}
+          className="btn btn-primary  block mx-auto mb-5"
+        >
+          See All Jobs
+        </button>
+      )}
     </div>
   );
 };
