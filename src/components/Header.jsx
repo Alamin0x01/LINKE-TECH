@@ -13,7 +13,7 @@ const Header = () => {
       <div className="relative flex items-center justify-between">
         <Link to="/" className="inline-flex items-center">
           <span className="ml-2  text-2xl font-bold tracking-wide text-gray-800 uppercase">
-            Linke <span className="inline-block text-blue-400">Tech</span>
+            Linke <span className="inline-block text-purple-500">Tech</span>
           </span>
         </Link>
 

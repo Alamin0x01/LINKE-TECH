@@ -30,6 +30,9 @@ const Statistics = () => {
   });
   return (
     <div className="my-container">
+      <h2 className="text-center text-cyan-400  font-bold text-3xl mb-5">
+        Assignment Marks Statistics
+      </h2>
       <div>
         <div>
           <Chart
