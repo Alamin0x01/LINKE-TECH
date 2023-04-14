@@ -54,7 +54,7 @@ const Header = () => {
           <li>
             <Link to="/StartApplying" className="btn border-transparent">
               <div>
-                <p>Start Applying</p>
+                <p>Star Applying</p>
               </div>
             </Link>
           </li>
@@ -131,7 +131,7 @@ const Header = () => {
                         className="btn border-transparent"
                       >
                         <div>
-                          <p>Start Applying</p>
+                          <p>Star Applying</p>
                         </div>
                       </Link>
                     </li>

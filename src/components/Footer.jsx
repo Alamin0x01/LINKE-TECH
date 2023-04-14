@@ -19,7 +19,7 @@ const Footer = () => {
             <br />
             Explore thousands of job opportunities
           </p>
-          <img src="https://i.ibb.co/60tMjfm/Group-9969.png" alt="" srcset="" />
+          <img src="https://i.ibb.co/60tMjfm/Group-9969.png" />
         </div>
         <div>
           <span className="footer-title">Services</span>

@@ -3,6 +3,7 @@ import { addToDb } from "../utilities/fakedb";
 import { useLoaderData, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import JobDetailSection from "./JobDetailSection";
+
 const JobDetails = () => {
   const jobDetail = useLoaderData();
   let jobId = useParams();
@@ -27,7 +28,7 @@ const JobDetails = () => {
       exist.quantity = exist.quantity + 1;
       const remaining = jobDetails.filter((jobs) => jobs.id !== job.id);
       newCart = [...remaining, exist];
-      toast.success("Add this Item Successfully", {
+      toast.success("Job Applied Successfully", {
         position: toast.POSITION.TOP_CENTER,
       });
     }
@@ -38,9 +39,9 @@ const JobDetails = () => {
     <div>
       <div className="bg-gray-100 rounded -mt-24 ">
         <div className="flex justify-between">
-          {/* <img src={Vector} alt="" /> */}
-          <h1 className="mt-12 pt-12 text-4xl font-bold">Job Details</h1>
-          {/* <img src={Vector1} alt="" /> */}
+          <h1 className="mt-12 ml-80 pt-12 text-4xl text-center font-bold">
+            Job Details
+          </h1>
         </div>
       </div>
       <div>

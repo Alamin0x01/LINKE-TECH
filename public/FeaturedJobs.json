@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "companyLogo": "./Logo/google-1-1 1-1.png",
+    "companyLogo": "https://i.ibb.co/T1d0X0R/google-1-1-1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Google LLC",
     "remoteOrOnsite": "Remote",
-    "location": "Anywhere",
+    "location": "Dhaka, Bangladesh",
     "fulltimeOrParttime": "Fulltime",
     "salary": "$100,000 - $120,000",
     "jobDescription": "We are looking for a talented software engineer to join our team and help us build amazing products.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "companyLogo": "./Logo/netflix-4 1.png",
+    "companyLogo": "https://i.ibb.co/6n7q2Cs/netflix-4-1.png",
     "jobTitle": "Marketing Manager",
     "companyName": "Netflix",
     "remoteOrOnsite": "Onsite",
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "companyLogo": "./Logo/netflix-4 1.png",
+    "companyLogo": "https://i.ibb.co/6n7q2Cs/netflix-4-1.png",
     "jobTitle": "Product Manager",
     "companyName": "Netflix",
     "remoteOrOnsite": "Remote",
@@ -56,57 +56,57 @@
 
   {
     "id": 4,
-    "companyLogo": "./Logo/google-1-1 1.png",
+    "companyLogo": "https://i.ibb.co/T1d0X0R/google-1-1-1.png",
     "jobTitle": "Data Analyst",
     "companyName": "Google LLC",
     "remoteOrOnsite": "Onsite",
     "location": "San Francisco, CA",
-    "FulltimeOrParttime": "Fulltime",
-    "Salary": "$90,000 - $110,000",
-    "JobDescription": "We are looking for a data analyst to help us extract insights from our large datasets.",
-    "JobResponsibility": "Develop and maintain reports and dashboards to visualize data. Conduct ad-hoc analysis to answer business questions. Collaborate with cross-functional teams to identify data-driven insights and opportunities. Develop and maintain data pipelines to extract, transform, and load data from various sources.",
-    "EducationalRequirements": "Bachelor's degree in Mathematics, Statistics, Computer Science, or related field.",
-    "Experiences": "3+ years of experience in data analysis.",
-    "ContactInformation": {
-      "Phone": "555-3456",
-      "Email": "jobs@examplecompany4.com"
+    "fulltimeOrParttime": "Fulltime",
+    "salary": "$90,000 - $110,000",
+    "jobDescription": "We are looking for a data analyst to help us extract insights from our large datasets.",
+    "jobResponsibility": "Develop and maintain reports and dashboards to visualize data. Conduct ad-hoc analysis to answer business questions. Collaborate with cross-functional teams to identify data-driven insights and opportunities. Develop and maintain data pipelines to extract, transform, and load data from various sources.",
+    "educationalRequirements": "Bachelor's degree in Mathematics, Statistics, Computer Science, or related field.",
+    "experiences": "3+ years of experience in data analysis.",
+    "contactInformation": {
+      "phone": "555-3456",
+      "email": "jobs@examplecompany4.com"
     }
   },
 
   {
-    "Id": 5,
-    "CompanyLogo": "./Logo/tesla-9 1.png",
-    "JobTitle": "Product Manager",
-    "CompanyName": "Tesla",
-    "RemoteOrOnsite": "Remote",
-    "Location": "Anywhere",
-    "FulltimeOrParttime": "Fulltime",
-    "Salary": "$100,000 - $120,000",
-    "JobDescription": "We are looking for an experienced Product Manager to help us build amazing products.",
-    "JobResponsibility": "Collaborate with cross-functional teams to develop product roadmaps and define product requirements. Manage product lifecycle from ideation to launch. Conduct market research and analysis to identify product opportunities and trends. Monitor and analyze product performance metrics and use data to inform product decisions.",
-    "EducationalRequirements": "Bachelor's degree in Business, Engineering, Computer Science, or related field.",
-    "Experiences": "5+ years of experience in product management.",
-    "ContactInformation": {
-      "Phone": "555-2345",
-      "Email": "jobs@examplecompany6.com"
+    "id": 5,
+    "companyLogo": "https://i.ibb.co/hWHt0R9/tesla-9-1.png",
+    "jobTitle": "Product Manager",
+    "companyName": "Tesla",
+    "remoteOrOnsite": "Remote",
+    "location": "Anywhere",
+    "fulltimeOrParttime": "Fulltime",
+    "salary": "$100,000 - $120,000",
+    "jobDescription": "We are looking for an experienced Product Manager to help us build amazing products.",
+    "jobResponsibility": "Collaborate with cross-functional teams to develop product roadmaps and define product requirements. Manage product lifecycle from ideation to launch. Conduct market research and analysis to identify product opportunities and trends. Monitor and analyze product performance metrics and use data to inform product decisions.",
+    "educationalRequirements": "Bachelor's degree in Business, Engineering, Computer Science, or related field.",
+    "experiences": "5+ years of experience in product management.",
+    "contactInformation": {
+      "phone": "555-2345",
+      "email": "jobs@examplecompany6.com"
     }
   },
   {
-    "Id": 6,
-    "CompanyLogo": "./Logo/tesla-9 1.png",
-    "JobTitle": "Product Manager",
-    "CompanyName": "Tesla",
-    "RemoteOrOnsite": "Remote",
-    "Location": "Anywhere",
-    "FulltimeOrParttime": "Fulltime",
-    "Salary": "$100,000 - $120,000",
-    "JobDescription": "We are looking for an experienced Product Manager to help us build amazing products.",
-    "JobResponsibility": "Collaborate with cross-functional teams to develop product roadmaps and define product requirements. Manage product lifecycle from ideation to launch. Conduct market research and analysis to identify product opportunities and trends. Monitor and analyze product performance metrics and use data to inform product decisions.",
-    "EducationalRequirements": "Bachelor's degree in Business, Engineering, Computer Science, or related field.",
-    "Experiences": "5+ years of experience in product management.",
-    "ContactInformation": {
-      "Phone": "555-2345",
-      "Email": "jobs@examplecompany6.com"
+    "id": 6,
+    "companyLogo": "https://i.ibb.co/hWHt0R9/tesla-9-1.png",
+    "jobTitle": "Data Analyst",
+    "companyName": "Tesla",
+    "remoteOrOnsite": "Onsite",
+    "location": "Anywhere",
+    "fulltimeOrParttime": "Fulltime",
+    "salary": "$120,000 - $200,000",
+    "jobDescription": "We are looking for an experienced Product Manager to help us build amazing products.",
+    "jobResponsibility": "Collaborate with cross-functional teams to develop product roadmaps and define product requirements. Manage product lifecycle from ideation to launch. Conduct market research and analysis to identify product opportunities and trends. Monitor and analyze product performance metrics and use data to inform product decisions.",
+    "educationalRequirements": "Bachelor's degree in Business, Engineering, Computer Science, or related field.",
+    "experiences": "4+ years of experience in product management.",
+    "contactInformation": {
+      "phone": "555-234544",
+      "email": "jobs.gt@examplecompany6.com"
     }
   }
 ]

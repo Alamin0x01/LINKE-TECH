@@ -10,7 +10,7 @@ import ErrorPage from "./components/ErrorPage";
 import Statistics from "./components/Statistics";
 import AppliedJobs from "./components/AppliedJobs";
 import JobDetails from "./components/JobDetails";
-
+import cartJobApplyed from "./components/Loaders/cartJobApplyed";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,6 +30,7 @@ const router = createBrowserRouter([
         element: <JobDetails />,
         loader: () => fetch("/FeaturedJobs.json"),
       },
+
       {
         path: "/blogs",
         element: <Blogs />,
@@ -41,13 +42,12 @@ const router = createBrowserRouter([
       {
         path: "/appliedJobs",
         element: <AppliedJobs />,
+        loader: cartJobApplyed,
       },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <RouterProvider router={router} />
 );

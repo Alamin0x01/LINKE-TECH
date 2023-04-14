@@ -18,9 +18,9 @@ const JobDetailSection = (props) => {
     location,
   } = props.job;
 
-  //   const handleAddToCart = props.handleAddToCart;
+  const handleAddToCart = props.handleAddToCart;
   return (
-    <div className="grid lg:grid-cols-4">
+    <div className="grid lg:grid-cols-4 mb-20">
       <div className="pt-8 col-span-3 px-4">
         <div className="mb-8">
           <h1 className="text-xl">
@@ -31,7 +31,7 @@ const JobDetailSection = (props) => {
 
         <div className="mb-8">
           <h1 className="text-xl">
-            <span className="text-2xl font-bold">Job REsponsibility:</span>{" "}
+            <span className="text-2xl font-bold">Job Responsibility:</span>{" "}
             {jobResponsibility}
           </h1>
         </div>
@@ -79,7 +79,7 @@ const JobDetailSection = (props) => {
               <PhoneIcon className="h-8 text-violet-400 w-8" />{" "}
               <p className="text-xl">
                 <span className="text-2xl font-bold">Phone:</span>{" "}
-                {contactInformation.phone}
+                {contactInformation?.phone}
               </p>
             </span>
 
@@ -88,7 +88,7 @@ const JobDetailSection = (props) => {
               <EnvelopeIcon className="h-8 text-violet-400 w-8" />{" "}
               <p className="text-xl">
                 <span className="text-2xl font-bold">Email:</span>{" "}
-                {contactInformation.email}
+                {contactInformation?.email}
               </p>
             </span>
             <span className="flex gap-3 pb-4 pl-4">
@@ -101,8 +101,8 @@ const JobDetailSection = (props) => {
           </div>
         </div>
         <button
-          //   onClick={() => handleAddToCart(props.job)}
-          className="btn btn-primary w-[64%] block mx-auto mb-5"
+          onClick={() => handleAddToCart(props.job)}
+          className="btn btn-primary w-[64%] block ml-9 mb-5"
         >
           Apply Now
         </button>

@@ -87,7 +87,7 @@ const Home = () => {
       {!seeAllJobs && (
         <button
           onClick={handleSellAllJob}
-          className="btn btn-primary  block mx-auto mb-5"
+          className="btn btn-primary  block ml-9 mb-5"
         >
           See All Jobs
         </button>

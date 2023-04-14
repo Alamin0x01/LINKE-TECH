@@ -1,76 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import FeaturedJobs from "./FeaturedJobs";
 
 const AppliedJobs = () => {
+  const saveCart = useLoaderData();
+  const [allJobs, setAllJobs] = useState(saveCart);
+  const [newJobs, setNewJobs] = useState(saveCart);
+
+  const filterHandler = (event) => {
+    const target = event.target.value;
+    if (target) {
+      const filterJob = allJobs.filter((job) => job.remoteOrOnsite == target);
+      // console.log(filterJob);
+      setNewJobs(filterJob);
+    } else {
+      setNewJobs(newJobs);
+    }
+  };
+
   return (
-    <div>
-      <h1 className="text-center text-3xl font-bold">Applied Jobs</h1>
-      <div className="my-container grid md:grid-cols-1 lg:grid-cols-1 gap-2">
-        <div className=" card card-compact w-50% bg-base-100 shadow-xl">
-          <div className="flex justify-between ">
-            {" "}
-            <figure>
-              <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Software Engineer</h2>
-              <p>Google LLC</p>
-              <p>Dhaka, Bangladesh</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">View Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" card card-compact w-50% bg-base-100 shadow-xl">
-          <div className="flex justify-between ">
-            {" "}
-            <figure>
-              <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Senior Product Designer</h2>
-              <p>Netflix</p>
-              <p>Dhaka, Bangladesh</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">View Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" card card-compact w-50% bg-base-100 shadow-xl">
-          <div className="flex justify-between ">
-            {" "}
-            <figure>
-              <img src="https://i.ibb.co/z2ZGQk5/google-1-1-1.png" alt="" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Software Engineer</h2>
-              <p>Google LLC</p>
-              <p>Dhaka, Bangladesh</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">View Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className=" card card-compact w-50% bg-base-100 shadow-xl">
-          <div className="flex justify-between ">
-            {" "}
-            <figure>
-              <img src="https://i.ibb.co/zV8HJjK/netflix-4-1.png" alt="" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Senior Product Designer</h2>
-              <p>Netflix</p>
-              <p>Dhaka, Bangladesh</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">View Details</button>
-              </div>
-            </div>
-          </div>
+    <>
+      <div className="bg-gray-100 rounded -mt-24">
+        <div className="flex justify-between">
+          <img src="https://i.ibb.co/gF5CfdD/Vector.png" alt="" />
+          <h2 className="text-center mt-12 pt-12 font-bold text-3xl mb-5">
+            Applied Jobs
+          </h2>
+          <img src="https://i.ibb.co/cQkpWvG/Vector-1.png" alt="Vector1" />
         </div>
       </div>
-    </div>
+      <div className="pt-7 mb-5 text-end px-12">
+        <div className="dropdown dropdown-bottom dropdown-end">
+          <label tabIndex={0} className="btn m-1">
+            Filter By Job
+          </label>
+          <select
+            onChange={filterHandler}
+            tabIndex={0}
+            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <option value={`Onsite`}>Onsite</option>
+            <option value={`Remote`}>Remote</option>
+          </select>
+        </div>
+        {newJobs.map((jobInfo) => (
+          <FeaturedJobs key={jobInfo.id} job={jobInfo} />
+        ))}
+      </div>
+    </>
   );
 };
 
